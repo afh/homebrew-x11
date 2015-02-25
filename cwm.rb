@@ -1,9 +1,7 @@
-require "formula"
-
 class Cwm < Formula
   homepage "https://github.com/chneukirchen/cwm"
-  url "https://github.com/chneukirchen/cwm/archive/v5.5.tar.gz"
-  sha1 "0e21a48b4973beb7ddf265bea48b73b0c39a589e"
+  url "https://github.com/chneukirchen/cwm/archive/v5.6.tar.gz"
+  sha1 "637f615a2a5944070cfe2a5fd0125daa461967b5"
 
   bottle do
     cellar :any
@@ -16,9 +14,9 @@ class Cwm < Formula
   depends_on "pkg-config" => :build
 
   patch do
-    # Fix 10.9 build. Merged upstream.
-    url "https://github.com/chneukirchen/cwm/commit/c7f481.diff"
-    sha1 "b91bd1b14fe9d4fef287be19eabc05762e5cf047"
+    # Fix 10.10 build. Merged upstream.
+    url "https://github.com/chneukirchen/cwm/commit/81c05b3.diff"
+    sha1 "adf1c676b693051d3c5dc964d8681eaf45b11dd7"
   end
 
   def install
