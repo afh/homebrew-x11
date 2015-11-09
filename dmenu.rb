@@ -1,7 +1,7 @@
 class Dmenu < Formula
   homepage "http://tools.suckless.org/dmenu/"
-  url "http://dl.suckless.org/tools/dmenu-4.5.tar.gz"
-  sha256 "082cd698d82125ca0b3989006fb84ac4675c2a5585bf5bb8af0ea09cfb95a850"
+  url "http://dl.suckless.org/tools/dmenu-4.6.tar.gz"
+  sha256 "4a7a24008a621c3cd656155ad91ab8136db8f0d3b9ec56dafeec518cabda96b3"
   bottle do
     cellar :any
     sha1 "54caf91cc564300d67e0ced4dc8ae65584b1276a" => :mavericks
