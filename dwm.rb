@@ -1,7 +1,7 @@
 class Dwm < Formula
   homepage "http://dwm.suckless.org/"
-  url "http://dl.suckless.org/dwm/dwm-6.0.tar.gz"
-  sha256 "b2b9483de69259eeea56844899bb2385158d3e79a42d82b10c142099fc8eeb56"
+  url "http://dl.suckless.org/dwm/dwm-6.1.tar.gz"
+  sha256 "c2f6c56167f0acdbe3dc37cca9c1a19260c040f2d4800e3529a21ad7cce275fe"
 
   bottle do
     cellar :any
