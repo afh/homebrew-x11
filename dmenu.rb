@@ -18,6 +18,6 @@ class Dmenu < Formula
   end
 
   test do
-    system "#{bin}/dmenu", "-v"
+    assert_match /#{version}/, shell_output("#{bin}/dmenu -v")
   end
 end
