@@ -1,7 +1,9 @@
 class Dwm < Formula
+  desc "Dynamic window manager"
   homepage "http://dwm.suckless.org/"
   url "http://dl.suckless.org/dwm/dwm-6.1.tar.gz"
   sha256 "c2f6c56167f0acdbe3dc37cca9c1a19260c040f2d4800e3529a21ad7cce275fe"
+  head "http://git.suckless.org/dwm", :using => :git
 
   bottle do
     cellar :any
@@ -9,8 +11,6 @@ class Dwm < Formula
     sha1 "ef7ce38daa07fe707df2454a3ddf4701a4cebfe7" => :mountain_lion
     sha1 "29c1feef59b6c7da94b096a9452a1e402037fba3" => :lion
   end
-
-  head "http://git.suckless.org/dwm", :using => :git
 
   depends_on :x11
   depends_on "dmenu" => :optional
@@ -35,5 +35,9 @@ class Dwm < Formula
     See also https://gist.github.com/311377 for a handful of tips and tricks
     for running dwm on Mac OS X.
     EOS
+  end
+
+  test do
+    assert_match /#{version}/, shell_output("#{bin}/dwm -v 2>&1", 1)
   end
 end
